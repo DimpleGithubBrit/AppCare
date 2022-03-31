@@ -95,131 +95,45 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-    <!--
-    In the above cardview widget
-    cardelevation property will give elevation to your card view
-    card corner radius will provide radius to your card view
-    card background color will give background color to your card view
-    card max elevation will give the cardview maximum elevation
-    card prevent corner overlap will add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.
-    card use compact padding will add padding in API v21+ as well to have the same measurements with previous versions.
-    below are the two widgets imageview and text view we are displaying inside our card view.
-    -->
 
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:layout_marginStart="8dp"
-        app:cardBackgroundColor="@color/white"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="10dp"
-        app:cardMaxElevation="12dp"
-        app:cardPreventCornerOverlap="true"
-        app:cardUseCompatPadding="true"
+    <Button
+        android:id="@+id/button"
+        android:layout_width="247dp"
+        android:layout_height="71dp"
+        android:text="Dr. Details"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView"
-        app:layout_constraintVertical_bias="0.117">>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.568" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center_horizontal"
-            android:text="Contact No."
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:layout_marginStart="8dp"
-        app:cardBackgroundColor="@color/teal_200"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="10dp"
-        app:cardMaxElevation="12dp"
-        app:cardPreventCornerOverlap="true"
-        app:cardUseCompatPadding="true"
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="247dp"
+        android:layout_height="71dp"
+        android:layout_centerHorizontal="true"
+        android:text="Contact No."
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView"
-        app:layout_constraintVertical_bias="0.117">>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.73"
+        tools:ignore="DuplicateIds,MissingConstraints" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center_horizontal"
-            android:text="Contact No."
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginBottom="188dp"
-        app:cardBackgroundColor="@color/teal_200"
-        app:cardCornerRadius="30dp"
-        app:cardElevation="20dp"
-        app:cardMaxElevation="12dp"
-        app:cardPreventCornerOverlap="true"
-        app:cardUseCompatPadding="true"
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="247dp"
+        android:layout_height="71dp"
+        android:text="Book Appoinment"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView2"
-        app:layout_constraintVertical_bias="0.117"
-        tools:ignore="UnknownId">>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center_horizontal"
-            android:text="Book Your  Slot"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-
-    </androidx.cardview.widget.CardView>
-
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginBottom="50dp"
-        app:cardBackgroundColor="@color/teal_200"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="20dp"
-        app:cardMaxElevation="12dp"
-        app:cardPreventCornerOverlap="true"
-        app:cardUseCompatPadding="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardV2"
-        app:layout_constraintVertical_bias="0.117"
-        tools:ignore="UnknownId">>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center_horizontal"
-            android:text="About Dr."
-            android:textSize="25sp"
-            android:textStyle="bold" />
-
-
-    </androidx.cardview.widget.CardView>
-
+        app:layout_constraintTop_toTopOf="@+id/docprofileimg"
+        app:layout_constraintVertical_bias="0.894"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
