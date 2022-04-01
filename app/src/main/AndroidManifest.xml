@@ -18,6 +18,9 @@
             android:name=".Activity_patient_home"
             android:exported="false" />
         <activity
+            android:name=".Appoinment"
+            android:exported="false" />
+        <activity
             android:name=".ActivityWelcome"
             android:exported="true">
             <intent-filter>

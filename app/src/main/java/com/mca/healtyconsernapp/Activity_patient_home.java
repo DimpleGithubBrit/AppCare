@@ -33,6 +33,7 @@ public class Activity_patient_home extends AppCompatActivity  {
         setContentView(R.layout.activity_patient_home);
 
         recyclerView = findViewById(R.id.recyclerview);
+        //firbase connectivity main
         database = FirebaseDatabase.getInstance().getReference("Doctor");
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

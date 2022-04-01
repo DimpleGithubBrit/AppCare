@@ -79,7 +79,7 @@ public class Login<dataAdapter, simple_spinner_dropdown_item> extends AppCompatA
 
 
 
-//        Toast.makeText(getApplicationContext(), spinner.getSelectedItem().toString(), Toast.LENGTH_SHORT).show();
+//      Toast.makeText(getApplicationContext(), spinner.getSelectedItem().toString(), Toast.LENGTH_SHORT).show();
 
     private void checkCredentials() {
 

@@ -2,8 +2,39 @@ package com.mca.healtyconsernapp;
 
 public class DoctorData {
 
-    String docname ,docprofession , docexp;
+    String docname ,docprofession , docexp , addressbuildn, addcity,addpin,txtcontact;
 
+    public String getAddressbuildn() {
+        return addressbuildn;
+    }
+
+    public void setAddressbuildn(String addressbuildn) {
+        this.addressbuildn = addressbuildn;
+    }
+
+    public String getAddcity() {
+        return addcity;
+    }
+
+    public void setAddcity(String addcity) {
+        this.addcity = addcity;
+    }
+
+    public String getAddpin() {
+        return addpin;
+    }
+
+    public void setAddpin(String addpin) {
+        this.addpin = addpin;
+    }
+
+    public String getTxtcontact() {
+        return txtcontact;
+    }
+
+    public void setTxtcontact(String txtcontact) {
+        this.txtcontact = txtcontact;
+    }
 
     public String getDocname() {
         return docname;

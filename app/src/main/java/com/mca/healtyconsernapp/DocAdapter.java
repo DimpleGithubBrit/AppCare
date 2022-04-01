@@ -42,6 +42,10 @@ public class DocAdapter extends RecyclerView.Adapter<DocAdapter.DocViewHolder> {
         holder.docname.setText(doctorData.docname);
         holder.docprofession.setText(doctorData.docprofession);
         holder.docexp.setText(doctorData.docexp);
+        holder.addressbuildn.setText(doctorData.addressbuildn);
+        holder.addcity.setText(doctorData.addcity);
+        holder.addpin.setText(doctorData.addpin);
+        holder.txtcontact.setText(doctorData.txtcontact);
         holder.docname.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,6 +53,10 @@ public class DocAdapter extends RecyclerView.Adapter<DocAdapter.DocViewHolder> {
                 intent.putExtra("docname",temp.getDocname());
 
                intent.putExtra("docexp",temp.getDocexp());
+                intent.putExtra("addressbuildn",temp.getAddressbuildn());
+                intent.putExtra("addcity",temp.getAddcity());
+                intent.putExtra("addpin",temp.getAddpin());
+                intent.putExtra("txtcontact",temp.getTxtcontact());
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(intent);
             }
@@ -64,7 +72,7 @@ public class DocAdapter extends RecyclerView.Adapter<DocAdapter.DocViewHolder> {
 
     public static class DocViewHolder extends RecyclerView.ViewHolder {
 
-        TextView docname, docprofession, docexp;
+        TextView docname, docprofession, docexp,addressbuildn, addcity,addpin,txtcontact;
 
         public DocViewHolder(@NonNull View itemView){
             super(itemView);
@@ -72,11 +80,16 @@ public class DocAdapter extends RecyclerView.Adapter<DocAdapter.DocViewHolder> {
             docname = itemView.findViewById(R.id.docname);
             docprofession = itemView.findViewById(R.id.docprofession);
             docexp = itemView.findViewById(R.id.docexp);
+            addressbuildn = itemView.findViewById(R.id.addressbuildn);
+            addcity =  itemView.findViewById(R.id.addcity);
+            addpin = itemView.findViewById(R.id.addpin);
+            txtcontact = itemView.findViewById(R.id.txtcontact);
+        }
         }
 
         }
 
-        }
+
 
 
 
